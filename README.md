@@ -12,8 +12,8 @@
 * --> $ hdfs dfs -put ~/mapreduce/input.txt /Demo
 #  Step5: Now we have to execute mapreduce program:
 * $ hadoop jar /home/rikesh/hadoop-3.3.1/share/hadoop/tools/lib/hadoop-streaming-3.3.1.jar
-* -file /home/rikesh/Hadoop_ref/word_count_python/mapper.py -mapper 'python3 mapper.py'
-* -file /home/rikesh/Hadoop_ref/word_count_python/reducer.py -reducer 'python3 reducer.py' 
+* -file /home/rikesh/mapreduce/mapper.py -mapper 'python3 mapper.py'
+* -file /home/rikesh/mapreduce/reducer.py -reducer 'python3 reducer.py' 
 * -input /Demo/input.txt 
 * -output /Demo/output
 
